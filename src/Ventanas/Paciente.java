@@ -118,7 +118,6 @@ public class Paciente extends javax.swing.JFrame {
         idPacienteLabel = new javax.swing.JLabel();
         agregarPacienteButton = new javax.swing.JButton();
         actualizarPacienteButton = new javax.swing.JButton();
-        eliminarPacienteButton = new javax.swing.JButton();
         salirButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaPacientes = new javax.swing.JTable();
@@ -273,9 +272,12 @@ public class Paciente extends javax.swing.JFrame {
             }
         });
 
-        eliminarPacienteButton.setText("Eliminar");
-
         salirButton.setText("Salir");
+        salirButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirButtonActionPerformed(evt);
+            }
+        });
 
         tablaPacientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -312,11 +314,9 @@ public class Paciente extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(132, 132, 132)
                         .addComponent(agregarPacienteButton)
-                        .addGap(46, 46, 46)
+                        .addGap(101, 101, 101)
                         .addComponent(actualizarPacienteButton)
-                        .addGap(50, 50, 50)
-                        .addComponent(eliminarPacienteButton)
-                        .addGap(47, 47, 47)
+                        .addGap(111, 111, 111)
                         .addComponent(salirButton)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -333,7 +333,6 @@ public class Paciente extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(agregarPacienteButton)
                     .addComponent(actualizarPacienteButton)
-                    .addComponent(eliminarPacienteButton)
                     .addComponent(salirButton))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -469,6 +468,10 @@ public class Paciente extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_actualizarPacienteButtonActionPerformed
 
+    private void salirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirButtonActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_salirButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -511,7 +514,6 @@ public class Paciente extends javax.swing.JFrame {
     private javax.swing.JTextField apellido2PacienteText;
     private javax.swing.JTextField cedulaPacienteText;
     private javax.swing.JTextField correoPacienteText;
-    private javax.swing.JButton eliminarPacienteButton;
     private javax.swing.JComboBox<String> estadoCivilPacienteCombobox;
     private javax.swing.JComboBox<String> estadoPacienteCombobox;
     private javax.swing.JLabel idPacienteLabel;

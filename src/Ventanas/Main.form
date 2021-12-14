@@ -71,43 +71,32 @@
                       <Group type="102" attributes="0">
                           <Component id="pacientesButton" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="doctoresButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="empleadosButton" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="pacientesButton1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                           <Component id="pacientesButton2" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="crearCitasBtn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="verCitasButton" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="pacientesButton3" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="crearUsuarioButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+                          <Component id="pacientesButton1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="prescripcionButton" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="activosButton" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="prescripcionButton1" max="32767" attributes="0"/>
+                      <Component id="pacientesButton3" min="-2" pref="170" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="prescripcionButton2" max="32767" attributes="0"/>
-                      <Component id="crearUsuarioButton" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="prescripcionButton1" min="-2" pref="166" max="-2" attributes="0"/>
+                      <Component id="logoutButton" min="-2" pref="83" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="verDoctorButton" max="32767" attributes="0"/>
-                      <Component id="logoutButton" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="21" max="32767" attributes="0"/>
+                  <Component id="cirugiasButton" min="-2" pref="97" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -117,21 +106,17 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="pacientesButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="doctoresButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="crearCitasBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="verCitasButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="empleadosButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="prescripcionButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="activosButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="crearUsuarioButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="verDoctorButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="pacientesButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="prescripcionButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cirugiasButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="pacientesButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="pacientesButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="pacientesButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="prescripcionButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="prescripcionButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="logoutButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
@@ -148,28 +133,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pacientesButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="doctoresButton">
+        <Component class="javax.swing.JButton" name="empleadosButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Doctores"/>
+            <Property name="text" type="java.lang.String" value="Empleados"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="doctoresButtonActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="crearCitasBtn">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Crear citas"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="crearCitasBtnActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="verCitasButton">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Ver Citas"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="verCitasButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="empleadosButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="prescripcionButton">
@@ -180,28 +149,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="prescripcionButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="activosButton">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Activos"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="activosButtonActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="crearUsuarioButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Crear usuario"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="crearUsuarioButtonActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="verDoctorButton">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Ver Doctor"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="verDoctorButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="logoutButton">
@@ -244,12 +197,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="prescripcionButton1ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="prescripcionButton2">
+        <Component class="javax.swing.JButton" name="cirugiasButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cirugias"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="prescripcionButton2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cirugiasButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

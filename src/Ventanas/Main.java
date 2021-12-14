@@ -19,6 +19,7 @@ public class Main extends javax.swing.JFrame {
         initComponents();
     }
     
+    int idempleado;
     int nuevoid;
     String nuevousuario;
     String nuevorol;
@@ -31,6 +32,7 @@ public class Main extends javax.swing.JFrame {
         this.nuevorol = rol;
         rolLabel.setText(nuevorol);
         this.nuevoid = id;
+        
         
     }
 
@@ -45,19 +47,15 @@ public class Main extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         pacientesButton = new javax.swing.JButton();
-        doctoresButton = new javax.swing.JButton();
-        crearCitasBtn = new javax.swing.JButton();
-        verCitasButton = new javax.swing.JButton();
+        empleadosButton = new javax.swing.JButton();
         prescripcionButton = new javax.swing.JButton();
-        activosButton = new javax.swing.JButton();
         crearUsuarioButton = new javax.swing.JButton();
-        verDoctorButton = new javax.swing.JButton();
         logoutButton = new javax.swing.JButton();
         pacientesButton1 = new javax.swing.JButton();
         pacientesButton2 = new javax.swing.JButton();
         pacientesButton3 = new javax.swing.JButton();
         prescripcionButton1 = new javax.swing.JButton();
-        prescripcionButton2 = new javax.swing.JButton();
+        cirugiasButton = new javax.swing.JButton();
         hospitalLabel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -77,24 +75,10 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        doctoresButton.setText("Doctores");
-        doctoresButton.addActionListener(new java.awt.event.ActionListener() {
+        empleadosButton.setText("Empleados");
+        empleadosButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                doctoresButtonActionPerformed(evt);
-            }
-        });
-
-        crearCitasBtn.setText("Crear citas");
-        crearCitasBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                crearCitasBtnActionPerformed(evt);
-            }
-        });
-
-        verCitasButton.setText("Ver Citas");
-        verCitasButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                verCitasButtonActionPerformed(evt);
+                empleadosButtonActionPerformed(evt);
             }
         });
 
@@ -105,24 +89,10 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        activosButton.setText("Activos");
-        activosButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                activosButtonActionPerformed(evt);
-            }
-        });
-
         crearUsuarioButton.setText("Crear usuario");
         crearUsuarioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 crearUsuarioButtonActionPerformed(evt);
-            }
-        });
-
-        verDoctorButton.setText("Ver Doctor");
-        verDoctorButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                verDoctorButtonActionPerformed(evt);
             }
         });
 
@@ -161,10 +131,10 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        prescripcionButton2.setText("Cirugias");
-        prescripcionButton2.addActionListener(new java.awt.event.ActionListener() {
+        cirugiasButton.setText("Cirugias");
+        cirugiasButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                prescripcionButton2ActionPerformed(evt);
+                cirugiasButtonActionPerformed(evt);
             }
         });
 
@@ -177,34 +147,26 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(pacientesButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(doctoresButton))
+                        .addComponent(empleadosButton))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(pacientesButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(87, 87, 87)
                         .addComponent(pacientesButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addComponent(crearUsuarioButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(crearCitasBtn)
+                        .addComponent(pacientesButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(verCitasButton))
-                    .addComponent(pacientesButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(prescripcionButton))
+                    .addComponent(pacientesButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(prescripcionButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(activosButton))
-                    .addComponent(prescripcionButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(prescripcionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(prescripcionButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(crearUsuarioButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(verDoctorButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(logoutButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addComponent(cirugiasButton, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,20 +174,16 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pacientesButton)
-                    .addComponent(doctoresButton)
-                    .addComponent(crearCitasBtn)
-                    .addComponent(verCitasButton)
+                    .addComponent(empleadosButton)
                     .addComponent(prescripcionButton)
-                    .addComponent(activosButton)
                     .addComponent(crearUsuarioButton)
-                    .addComponent(verDoctorButton))
+                    .addComponent(pacientesButton1)
+                    .addComponent(prescripcionButton1)
+                    .addComponent(cirugiasButton))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(pacientesButton1)
                     .addComponent(pacientesButton2)
                     .addComponent(pacientesButton3)
-                    .addComponent(prescripcionButton1)
-                    .addComponent(prescripcionButton2)
                     .addComponent(logoutButton))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
@@ -311,28 +269,20 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void pacientesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pacientesButtonActionPerformed
-        // TODO add your handling code here:
+        Paciente paciente = new Paciente();
+        paciente.setVisible(true);
     }//GEN-LAST:event_pacientesButtonActionPerformed
 
-    private void doctoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doctoresButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_doctoresButtonActionPerformed
-
-    private void crearCitasBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearCitasBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_crearCitasBtnActionPerformed
-
-    private void verCitasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verCitasButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_verCitasButtonActionPerformed
+    private void empleadosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_empleadosButtonActionPerformed
+    
+        Empleados empleados = new Empleados();
+        empleados.setVisible(true);
+        
+    }//GEN-LAST:event_empleadosButtonActionPerformed
 
     private void prescripcionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prescripcionButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_prescripcionButtonActionPerformed
-
-    private void activosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_activosButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_activosButtonActionPerformed
 
     private void crearUsuarioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearUsuarioButtonActionPerformed
         
@@ -340,16 +290,15 @@ public class Main extends javax.swing.JFrame {
             usuario.setVisible(true);
     }//GEN-LAST:event_crearUsuarioButtonActionPerformed
 
-    private void verDoctorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verDoctorButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_verDoctorButtonActionPerformed
-
     private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutButtonActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        Login login = new Login();
+        login.setVisible(true);
     }//GEN-LAST:event_logoutButtonActionPerformed
 
     private void pacientesButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pacientesButton1ActionPerformed
-        // TODO add your handling code here:
+        Hospital hospital = new Hospital();
+        hospital.setVisible(true);
     }//GEN-LAST:event_pacientesButton1ActionPerformed
 
     private void pacientesButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pacientesButton2ActionPerformed
@@ -357,16 +306,19 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_pacientesButton2ActionPerformed
 
     private void pacientesButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pacientesButton3ActionPerformed
-        // TODO add your handling code here:
+        Cita_postoperatoria cita_postoperatoria = new Cita_postoperatoria();
+        cita_postoperatoria.setVisible(true);
     }//GEN-LAST:event_pacientesButton3ActionPerformed
 
     private void prescripcionButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prescripcionButton1ActionPerformed
-        // TODO add your handling code here:
+        Internamiento internamiento = new Internamiento();
+        internamiento.setVisible(true);
     }//GEN-LAST:event_prescripcionButton1ActionPerformed
 
-    private void prescripcionButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prescripcionButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_prescripcionButton2ActionPerformed
+    private void cirugiasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cirugiasButtonActionPerformed
+        Cirugias cirugias = new Cirugias();
+        cirugias.setVisible(true);
+    }//GEN-LAST:event_cirugiasButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -404,10 +356,9 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton activosButton;
-    private javax.swing.JButton crearCitasBtn;
+    private javax.swing.JButton cirugiasButton;
     private javax.swing.JButton crearUsuarioButton;
-    private javax.swing.JButton doctoresButton;
+    private javax.swing.JButton empleadosButton;
     private javax.swing.JLabel hospitalLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -420,10 +371,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton pacientesButton3;
     private javax.swing.JButton prescripcionButton;
     private javax.swing.JButton prescripcionButton1;
-    private javax.swing.JButton prescripcionButton2;
     private javax.swing.JLabel rolLabel;
     private javax.swing.JLabel usuarioLabel;
-    private javax.swing.JButton verCitasButton;
-    private javax.swing.JButton verDoctorButton;
     // End of variables declaration//GEN-END:variables
 }

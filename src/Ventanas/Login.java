@@ -237,7 +237,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_loginIngresarButtonActionPerformed
 
     private void loginCancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginCancelarButtonActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        System.exit(0);
     }//GEN-LAST:event_loginCancelarButtonActionPerformed
 
     private void loginRolComboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginRolComboboxActionPerformed

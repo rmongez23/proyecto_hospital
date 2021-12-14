@@ -53,18 +53,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jPanel2" max="32767" attributes="0"/>
-                      </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
-                          <Component id="agregarPacienteButton" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-                          <Component id="actualizarPacienteButton" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                          <Component id="agregarEmpleadoButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="291" max="-2" attributes="0"/>
                           <Component id="salirButton" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="144" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
@@ -73,17 +67,17 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
+              <Component id="empleadoPanel" alignment="1" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="empleadoPanel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="agregarPacienteButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="actualizarPacienteButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="agregarEmpleadoButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="salirButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -94,14 +88,14 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel2">
+        <Container class="javax.swing.JPanel" name="empleadoPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="Registro de Paciente">
+                <TitledBorder title="Registro de Empleados">
                   <Font PropertyName="font" name="Tahoma" size="18" style="1"/>
                   <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
                 </TitledBorder>
@@ -114,66 +108,78 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="correoPacienteText" min="-2" pref="180" max="-2" attributes="0"/>
-                                  </Group>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                              <Component id="idPacienteLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="telefonoPacienteText" min="-2" pref="180" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="cedulaPacienteText" min="-2" pref="180" max="-2" attributes="0"/>
+                                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="gradoAcademicoText" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="apellido1PacienteText" min="-2" pref="180" max="-2" attributes="0"/>
+                                      <Component id="apellido1EmpleadoText" min="-2" pref="180" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="apellido2EmpleadoText" min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Component id="profesionCombobox" pref="184" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="especialidadCombobox" pref="188" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="cedulaEmpleadoText" min="-2" pref="180" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="usuarioEmpleadoCombobox" min="-2" max="-2" attributes="0"/>
+                                          <Component id="correoEmpleadoText" min="-2" pref="180" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="estadoCivilPacienteCombobox" min="-2" max="-2" attributes="0"/>
-                                              <Component id="apellido2PacienteText" min="-2" pref="180" max="-2" attributes="0"/>
-                                              <Component id="estadoPacienteCombobox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                          <Component id="estadoCivilEmpleadoCombobox" min="-2" max="-2" attributes="0"/>
+                                          <Component id="telefonoEmpleadoText" min="-2" pref="180" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="nombrePacienteText" min="-2" pref="180" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                          <Component id="nombreEmpleadoText" min="-2" pref="180" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jlabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="idPacienteLabel" min="-2" max="-2" attributes="0"/>
-                          </Group>
                       </Group>
-                      <EmptySpace pref="56" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -181,39 +187,48 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jlabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="idPacienteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="idPacienteLabel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cedulaPacienteText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cedulaEmpleadoText" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="nombrePacienteText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nombreEmpleadoText" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="apellido1EmpleadoText" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="apellido1PacienteText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="apellido2PacienteText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="apellido2EmpleadoText" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="correoPacienteText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="estadoCivilPacienteCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="gradoAcademicoText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="profesionCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="59" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="telefonoPacienteText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="estadoPacienteCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="telefonoEmpleadoText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="especialidadCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="correoEmpleadoText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="estadoCivilEmpleadoCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="usuarioEmpleadoCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -304,25 +319,25 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Estado"/>
+                <Property name="text" type="java.lang.String" value="Usuario"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="cedulaPacienteText">
+            <Component class="javax.swing.JTextField" name="cedulaEmpleadoText">
             </Component>
-            <Component class="javax.swing.JTextField" name="nombrePacienteText">
+            <Component class="javax.swing.JTextField" name="nombreEmpleadoText">
             </Component>
-            <Component class="javax.swing.JTextField" name="apellido1PacienteText">
+            <Component class="javax.swing.JTextField" name="apellido1EmpleadoText">
             </Component>
-            <Component class="javax.swing.JTextField" name="apellido2PacienteText">
+            <Component class="javax.swing.JTextField" name="apellido2EmpleadoText">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="apellido2PacienteTextActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="apellido2EmpleadoTextActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="correoPacienteText">
+            <Component class="javax.swing.JTextField" name="correoEmpleadoText">
             </Component>
-            <Component class="javax.swing.JTextField" name="telefonoPacienteText">
+            <Component class="javax.swing.JTextField" name="telefonoEmpleadoText">
             </Component>
-            <Component class="javax.swing.JComboBox" name="estadoCivilPacienteCombobox">
+            <Component class="javax.swing.JComboBox" name="estadoCivilEmpleadoCombobox">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="2">
@@ -335,42 +350,90 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JComboBox" name="estadoPacienteCombobox">
+            <Component class="javax.swing.JComboBox" name="usuarioEmpleadoCombobox">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="2">
-                    <StringItem index="0" value="Activo"/>
-                    <StringItem index="1" value="Inactivo"/>
-                  </StringArray>
+                  <StringArray count="0"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="usuarioEmpleadoComboboxActionPerformed"/>
+              </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="jlabel">
+            <Component class="javax.swing.JLabel" name="idPacienteLabel">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
-                <Property name="text" type="java.lang.String" value="ID Paciente: "/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Grado academico"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="idPacienteLabel">
+            <Component class="javax.swing.JTextField" name="gradoAcademicoText">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel10">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Profesion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel11">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Especialidad"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="profesionCombobox">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="profesionComboboxActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="especialidadCombobox">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="especialidadComboboxActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="agregarPacienteButton">
+        <Component class="javax.swing.JButton" name="agregarEmpleadoButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Agregar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agregarPacienteButtonActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="actualizarPacienteButton">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Actualizar"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actualizarPacienteButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agregarEmpleadoButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="salirButton">
@@ -388,23 +451,35 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="tablaPacientes">
+            <Component class="javax.swing.JTable" name="tablaEmpleados">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="9" rowCount="0">
-                    <Column editable="true" title="Paciente N&#xb0;" type="java.lang.Integer"/>
-                    <Column editable="true" title="Cedula" type="java.lang.Integer"/>
+                  <Table columnCount="11" rowCount="0">
+                    <Column editable="true" title="Identificacion" type="java.lang.Integer"/>
                     <Column editable="true" title="Nombre" type="java.lang.String"/>
                     <Column editable="true" title="Primer apellido" type="java.lang.String"/>
                     <Column editable="true" title="Segundo apellido" type="java.lang.String"/>
+                    <Column editable="true" title="Grado academico" type="java.lang.String"/>
+                    <Column editable="true" title="Profesion" type="java.lang.String"/>
+                    <Column editable="true" title="Especialidad" type="java.lang.String"/>
                     <Column editable="true" title="Telefono" type="java.lang.Integer"/>
-                    <Column editable="true" title="Estado civil" type="java.lang.String"/>
                     <Column editable="true" title="Correo" type="java.lang.String"/>
-                    <Column editable="true" title="Estado" type="java.lang.String"/>
+                    <Column editable="true" title="Estado Civil" type="java.lang.String"/>
+                    <Column editable="true" title="Usuario" type="java.lang.Object"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                   <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                       <Title/>
                       <Editor/>
@@ -457,7 +532,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tablaPacientesMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tablaEmpleadosMouseClicked"/>
               </Events>
             </Component>
           </SubComponents>
